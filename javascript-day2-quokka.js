@@ -126,11 +126,11 @@ var person = {
 // } else if(person.isExtrovert){
 //     person.wantsToHangOut = true;
 // } else if(person.isIntrovert 
-        //   && goodWeather 
-        //   && doesntHaveToDriveFar
-        //   && hasBeenMoreThan3DaysSinceHangingOut
-        //   || hasBeenLongerThan1Month){
-        //     return true;
+//   && goodWeather 
+//   && doesntHaveToDriveFar
+//   && hasBeenMoreThan3DaysSinceHangingOut
+//   || hasBeenLongerThan1Month){
+//     return true;
 // }
 
 
@@ -140,12 +140,12 @@ var person = {
 var sizing = 7 < 10 ? "less than" : "greater than";
 var sizing2 = 7 > 10 ? "valid statement" : "invalid statement"
 
-function flow1(){ 
+function flow1() {
     var abc = 123;
     abc;
 }
 
-function flow2(){
+function flow2() {
     var abc = 123;
     abc;
 }
@@ -154,37 +154,6 @@ var isTrue = true;
 // Which function will be invoked?
 // Change the value of isTrue above to make the other function get invoked
 // isTrue ? flow1() : flow2();
-
-
-// * arrow functions:
-// one line Arrow functions 
-
-function add(x, y){
-    return x + y;
-} // Is the same as
-
-var add = (x, y) => x + y;
-var sum = add(3, 2)
-sum;
-
-//One line Arrow functions 
-// - remove need for curly braces
-// - automatically return your line of code
-// - Can only do 1 line of code
-
-//multi line arrow functions
-var add = (x, y) => {
-    x = x;
-    y = y;
-    return x + y;
-}
-var sum = add(3, 8)
-sum;
-
-//multi line Arrow functions 
-// - Use curly braces
-// - Still need a return statement
-// - Can do many lines of code
 
 
 // ARRAYS
@@ -252,10 +221,10 @@ var frenchNumbers = {
 // - bracket notation to add property
 // ADD numbers 4, 5, 6, 7, 8, 9, 10 with bracket notation
 // ADD a property "flare" with "voila" as a value IF the translated value for 2
-     // Does not start with a t
+// Does not start with a t
 // - bracket notation
 
-function translate(languageObject, sentencePropertyName){
+function translate(languageObject, sentencePropertyName) {
     //GET the sentenceValue using the sentencePropertyName
     //GET the translated value of 3 and add it to the sentenceValue above
     //GET all 3 numbers and add them to the end as a string
@@ -264,36 +233,6 @@ function translate(languageObject, sentencePropertyName){
 }
 
 translate(englishNumbers, "sentence")
-
-// UPDATE the translation function to include the flare, if it exists
-//  -- .hasOwnProperty
-
-// - methods
-// var chineseNumbers = {
-//     1: "ee",
-//     2: "er",
-//     3: "san",
-//     sentence: "Wǒ kěyǐ zhǐwàng ",
-//     translate: ??
-// }
-//WRITE the translate function above
-//INVOKE the translate function
-
-// - using functions to build objects
-function makeShoes(color, size, brand){
-    return {
-        color: color,
-        size: size,
-        brand: brand
-    }
-}
-//MAKE a function that builds an animal that has species, sound, color
-
-// - array of objects very common
-// MAKE 3 animals using your makeAnimal function
-// ADD them to an animals array
-
-// You have a zoo!
 
 
 // callbacks
@@ -315,14 +254,14 @@ function makeShoes(color, size, brand){
 
 //WRITE a function : waitForFood, it logs, "hurray"
 
-function orderFood(tableNumber){
+function orderFood(tableNumber) {
     //INVOKE tableNumber after 2 seconds
 }
 
 //INVOKE orderFood with the function waitForFood as a parameter
 
 
-function doTimes(times, func){
+function doTimes(times, func) {
     for (var i = 0; i < times; i++) {
         times;
         i;
@@ -332,8 +271,8 @@ function doTimes(times, func){
 }
 
 var arr = [];
-function sayHi(index){
-    arr.push("Hi"+index)
+function sayHi(index) {
+    arr.push("Hi" + index)
 }
 
 //INVOKE doTimes and say hi 3 times
